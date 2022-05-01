@@ -42,7 +42,7 @@
         <div class="Intro">
           <el-card class="box-card" style="margin-top: 10px;height: 380px">
             <h1>Intro</h1>
-            <p>Hello World</p>
+            <p>{{ Intro[currentView] }}</p>
           </el-card>
         </div>
       </el-aside>
@@ -80,6 +80,14 @@ export default {
   data() {
     return {
       currentView: '',
+      Intro: {
+        'Group': 'Group',
+        'Influence': 'Influence',
+        'Correlation': 'Correlation',
+        'Continent': 'Continent',
+        'Deviation': 'Deviation',
+        'Global': 'Global',
+      }
     }
   },
   methods: {
