@@ -2,7 +2,7 @@
 
   <el-container>
     <el-header>
-      <div class="wordHead">5048 - Group 19 Visualisation</div>
+      <div class="wordHead">Group 19 World Happiness Report</div>
     </el-header>
     <el-container>
       <el-aside>
@@ -39,12 +39,15 @@
             </el-menu-item>
           </el-menu>
         </div>
-        <div class="Intro">
-          <el-card class="box-card" style="margin-top: 10px;height: 380px">
-            <h1>Intro</h1>
-            <p>{{ Intro[currentView] }}</p>
-          </el-card>
-        </div>
+        <el-form class="text">
+          <h2>Introduction</h2>
+          <el-divider></el-divider>
+          <div class="textBox">
+            <p>
+              {{ Intro[currentView] }}
+            </p>
+          </div>
+        </el-form>
       </el-aside>
       <el-main>
         <div v-if="this.currentView=== 'Group'" class="wrap">
@@ -58,13 +61,14 @@
         </div>
         <div v-else-if="this.currentView=== 'Continent'" class="wrap">
           <h1>Continent</h1>
-          <iframe frameBorder="0" src="https://barrt-test.herokuapp.com/"></iframe>
+          <iframe class="Continent" frameBorder="0" src="https://barrt-test.herokuapp.com/"></iframe>
         </div>
         <div v-else-if="this.currentView=== 'Deviation'" class="wrap">
           <h1>Deviation</h1>
         </div>
         <div v-else-if="this.currentView=== 'Global'" class="wrap">
           <h1>Global</h1>
+          <iframe class="Global" frameBorder="0" src="static/map.html"/>
         </div>
         <div v-else-if="this.currentView=== 'Unknown'" class="wrap">
           <h1>Unknown</h1>
@@ -105,8 +109,25 @@ export default {
 
 <style>
 
+.textBox{
+  margin-left: 20px;
+  margin-right: 10px;
+  height: 70%;
+  overflow-x:hidden;
+}
+
 .text {
-  font-size: 14px;
+  background-color: #F7F7F7;
+  border-radius: 4px;
+  margin-top: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12),
+  0 0 10px rgba(0, 0, 0, .25);
+  width: 94%;
+  height: 400px;
+  margin-left: 2px;
+  padding-top: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .item {
@@ -124,18 +145,44 @@ export default {
   overflow: hidden;
 }
 
-.el-header {
-  background-color: #5CDB9F;
-}
 
 .wordHead {
   color: black;
 }
 
+
 .el-icon-menu {
   color: #42b983;
 }
 
+h2{
+  text-align: center;
+}
+
+p{
+  text-indent:25px
+}
+
+.el-header{
+  margin: 20px 20px 20px 20px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  text-shadow: 2px 5px 0 rgba(0,0,0,0.2);
+}
+
+.el-divider--horizontal{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.el-main{
+  background-color: #F7F7F7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12),
+  0 0 10px rgba(0, 0, 0, .25);
+}
 iframe {
   width: 165% !important;
   height: 200% !important;
