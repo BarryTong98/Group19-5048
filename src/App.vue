@@ -58,6 +58,7 @@
         </div>
         <div v-else-if="this.currentView=== 'Correlation'" class="wrap">
           <h1>Correlation</h1>
+          <Correlation></Correlation>
         </div>
         <div v-else-if="this.currentView=== 'Continent'" class="wrap">
           <h1>Continent</h1>
@@ -80,7 +81,11 @@
 </template>
 
 <script>
+
+import Correlation from "./components/Correlation";
+
 export default {
+  components: {Correlation},
   data() {
     return {
       currentView: '',
