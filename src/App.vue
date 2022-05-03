@@ -515,10 +515,6 @@ h2 {
   text-align: center;
 }
 
-p {
-  text-indent: 25px
-}
-
 
 .groupImg {
   margin: 5%
