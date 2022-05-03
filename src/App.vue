@@ -51,6 +51,7 @@
       <el-main  class="out-main">
         <div v-if="this.currentView=== 'Group'" class="wrap">
           <h1>Group</h1>
+          <img class="groupImg" src="../static/img.png">
         </div>
         <div v-else-if="this.currentView=== 'Influence'" class="wrap">
           <h1>Influence</h1>
@@ -335,11 +336,14 @@
         </div>
         <div v-else-if="this.currentView=== 'Continent'" class="wrap">
           <h1>Continent</h1>
-          <span><span style="color: #e16162">Tip: </span>It may take a while to reload the visualisation since I deploy it in website</span>
+          <span><span style="color: #e16162">Tip: </span>It may take a while to reload the visualisation since I deploy it in the website</span>
           <iframe class="Continent" frameBorder="0" src="https://barrt-test.herokuapp.com/"></iframe>
         </div>
         <div v-else-if="this.currentView=== 'Deviation'" class="wrap">
           <h1>Deviation</h1>
+          <div style="height:500px">
+            <iframe  class="Deviation" frameBorder="0" src="static/result.html"/>
+          </div>
         </div>
         <div v-else-if="this.currentView=== 'Global'" class="wrap">
           <h1>Global</h1>
@@ -361,12 +365,12 @@ export default {
     return {
       currentView: '',
       Intro: {
-        'Group': 'Group',
-        'Influence': 'Influence',
-        'Correlation': 'Correlation',
+        'Group': 'Use given data set and clustering algorithms to classify countries into three clusters. Calculate the Difference between the clustering results and the actual classification values and mark them with different colors on the map',
+        'Influence': 'These visualizations are to explore the relationship between six factors and Happiness. On the map, the bigger circle means the higher happiness scores, and the color represents the ranking of the contribution degree of a factor.',
+        'Correlation': 'These visualizations show correlations between individual features based on the data provided. In the Correlation Matrix, the closer the value is to 1 or -1, the greater the correlation between the two features. At the same time, the Correlation Histogram shows the correlation between various factors and happiness. This makes it very intuitive to see which factors have the greatest impact on happiness. In the Scatter and Density plot, by looking at the trend of points, the influence between the features can also be obtained.',
         'Continent': 'Continent',
         'Deviation': 'Deviation',
-        'Global': 'Global',
+        'Global': 'Display the happiness ranking segment and the most important influencing factor for each country in different colors in two maps. Using timeline in pyecharts to display data in different year.',
       },
       activeName: 'first',
 
@@ -438,11 +442,13 @@ export default {
   },
   created() {
     this.currentView = 'Group';
+    console.log(this.currentView)
   }
 }
 </script>
 
 <style>
+
 .out-head{
   font-weight: 100;
   text-transform: uppercase;
@@ -513,7 +519,9 @@ p{
 }
 
 
-
+.groupImg{
+  margin: 5%
+}
 
 
 .el-divider--horizontal{
