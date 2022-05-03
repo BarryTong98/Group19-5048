@@ -7,7 +7,7 @@
       <el-aside class="out-aside">
         <div>
           <el-menu
-            default-active="2"
+            default-active="1"
             background-color="#004643"
             text-color="#fffffe"
             active-text-color="#f9bc60">
@@ -51,7 +51,7 @@
       <el-main  class="out-main">
         <div v-if="this.currentView=== 'Group'" class="wrap">
           <h1>Group</h1>
-          <img class="groupImg" src="../static/img.png">
+          <img style="width: 55%; height: 60%; margin-left: 15%" class="groupImg" src="../static/WechatIMG2987.png">
         </div>
         <div v-else-if="this.currentView=== 'Influence'" class="wrap">
           <h1>Influence</h1>
@@ -365,12 +365,13 @@ export default {
     return {
       currentView: '',
       Intro: {
-        'Group': 'Use given data set and clustering algorithms to classify countries into three clusters. Calculate the Difference between the clustering results and the actual classification values and mark them with different colors on the map',
-        'Influence': 'These visualizations are to explore the relationship between six factors and Happiness. On the map, the bigger circle means the higher happiness scores, and the color represents the ranking of the contribution degree of a factor.',
+        'Group': 'Use given data set and clustering algorithms to classify countries into three clusters. Calculate the Difference between the clustering results and the actual classification values and mark them with different colors on the map. The larger red areas illustrate the better performance of the clustering algorithm and the greater  association of these data with the country\'s level of development',
+        'Influence': 'These visualizations are trying to analyze the relationship between six factors and happiness. \n' +
+          'Each circle in the diagram represents a country, X-axis represents factor rank, Y-axis represents happiness rank, the color represents the continent the country belongs to, and the size of the circle represents the population of this country.  On the map, the bigger circle means the higher happiness scores, and the color represents the ranking of the contribution degree of a factor. ',
         'Correlation': 'These visualizations show correlations between individual features based on the data provided. In the Correlation Matrix, the closer the value is to 1 or -1, the greater the correlation between the two features. At the same time, the Correlation Histogram shows the correlation between various factors and happiness. This makes it very intuitive to see which factors have the greatest impact on happiness. In the Scatter and Density plot, by looking at the trend of points, the influence between the features can also be obtained.',
-        'Continent': 'Continent',
-        'Deviation': 'Deviation',
-        'Global': 'Display the happiness ranking segment and the most important influencing factor for each country in different colors in two maps. Using timeline in pyecharts to display data in different year.',
+        'Continent': 'This multi-level pie chart shows the overall happiness score in different regions and the happiness variance rate over years. The darker(bluer) color of the region/country means this area is more happy. It is possible to compare the overall happiness score of countries in several regions through the selection of different regions. A positive and higher happiness rate means that the country is becoming happier, while a negative happiness rate means that the country is becoming less happy. ',
+        'Deviation': 'This figure divides the dataset into five years, with each year\'s data falling in the same grid. Also the data in different intervals are represented by different colors. We can find that the overall difference of the data decreases as the year score increases, indicating that the effect of health on well-being increases with the year. An interesting finding is that the top 10 and bottom 10 countries in health rankings typically have vastly different happiness rankings.',
+        'Global': 'Display the happiness ranking segment and the most important influencing factor for each country in different colors in two maps. Using timeline in pyecharts to display data in different year. The largest contributors to happiness in most countries are economic and family.In particular, economy occupied the majority of areas in 2016, while in other years family factors take up a greater proportion\n',
       },
       activeName: 'first',
 
