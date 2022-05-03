@@ -15,21 +15,21 @@
               <i class="el-icon-s-data"></i>
               <span slot="title">Group</span>
             </el-menu-item>
-            <el-menu-item index="2" @click="changeView('Influence')">
-              <i class="el-icon-data-line"></i>
-              <span slot="title">Influence</span>
-            </el-menu-item>
-            <el-menu-item index="3" @click="changeView('Correlation')">
+            <el-menu-item index="2" @click="changeView('Correlation')">
               <i class="el-icon-set-up"></i>
               <span slot="title">Correlation</span>
             </el-menu-item>
-            <el-menu-item index="4" @click="changeView('Continent')">
-              <i class="el-icon-place"></i>
-              <span slot="title">Continent</span>
-            </el-menu-item>
-            <el-menu-item index="5" @click="changeView('Deviation')">
+            <el-menu-item index="3" @click="changeView('Deviation')">
               <i class="el-icon-aim"></i>
               <span slot="title">Deviation</span>
+            </el-menu-item>
+            <el-menu-item index="4" @click="changeView('Factors')">
+              <i class="el-icon-data-line"></i>
+              <span slot="title">Factors</span>
+            </el-menu-item>
+            <el-menu-item index="5" @click="changeView('Continent')">
+              <i class="el-icon-place"></i>
+              <span slot="title">Continent</span>
             </el-menu-item>
             <el-menu-item index="6" @click="changeView('Global')">
               <i class="el-icon-pie-chart"></i>
@@ -48,14 +48,14 @@
           </div>
         </el-form>
       </el-aside>
-      <el-main  class="out-main">
+      <el-main class="out-main">
         <div v-if="this.currentView=== 'Group'" class="wrap">
           <h1>Group</h1>
           <img style="width: 55%; height: 60%; margin-left: 15%" class="groupImg" src="../static/WechatIMG2987.png">
         </div>
-        <div v-else-if="this.currentView=== 'Influence'" class="wrap">
-          <h1>Influence</h1>
-          <span><span style="color: #e16162">Tip: </span>There are 2 visualizations to explain the relationship of influence with happiness. Please slide down.</span>
+        <div v-else-if="this.currentView=== 'Factors'" class="wrap">
+          <h1>Factors</h1>
+          <span><span style="color: #e16162">Tip: </span>There are 2 visualizations to explain the relationship of Factors with happiness. Please slide down.</span>
           <el-container>
             <el-main>
               <el-tabs v-model="activeName" @tab-click="handleClick">
@@ -233,7 +233,8 @@
                       <iframe frameBorder="0" src="./static/influence-scatter/2015/trust.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
-                      <iframe frameBorder="0" src="./static/influence-map/2015/2015-trust(Government%20Corruption).html"></iframe>
+                      <iframe frameBorder="0"
+                              src="./static/influence-map/2015/2015-trust(Government%20Corruption).html"></iframe>
                     </div>
                   </div>
                   <div v-show="show2016">
@@ -241,7 +242,8 @@
                       <iframe frameBorder="0" src="./static/influence-scatter/2016/trust.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
-                      <iframe frameBorder="0" src="./static/influence-map/2016/2016-trust(Government%20Corruption).html"></iframe>
+                      <iframe frameBorder="0"
+                              src="./static/influence-map/2016/2016-trust(Government%20Corruption).html"></iframe>
                     </div>
                   </div>
                   <div v-show="show2017">
@@ -249,7 +251,8 @@
                       <iframe frameBorder="0" src="./static/influence-scatter/2017/trust.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
-                      <iframe frameBorder="0" src="./static/influence-map/2017/2017-trust(Government%20Corruption).html"></iframe>
+                      <iframe frameBorder="0"
+                              src="./static/influence-map/2017/2017-trust(Government%20Corruption).html"></iframe>
                     </div>
                   </div>
                   <div v-show="show2018">
@@ -257,7 +260,8 @@
                       <iframe frameBorder="0" src="./static/influence-scatter/2018/trust.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
-                      <iframe frameBorder="0" src="./static/influence-map/2018/2018-trust(Government%20Corruption).html"></iframe>
+                      <iframe frameBorder="0"
+                              src="./static/influence-map/2018/2018-trust(Government%20Corruption).html"></iframe>
                     </div>
                   </div>
                   <div v-show="show2019">
@@ -265,7 +269,8 @@
                       <iframe frameBorder="0" src="./static/influence-scatter/2019/trust.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
-                      <iframe frameBorder="0" src="./static/influence-map/2019/2019-trust(Government%20Corruption).html"></iframe>
+                      <iframe frameBorder="0"
+                              src="./static/influence-map/2019/2019-trust(Government%20Corruption).html"></iframe>
                     </div>
                   </div>
                 </el-tab-pane>
@@ -316,9 +321,9 @@
             <div style="text-align: center">
               <el-image src="./static/img-influence-map.png"
                         style="width: 150px;"
-                        fit="contain"4></el-image>
+                        fit="contain" 4></el-image>
             </div>
-            <el-footer >
+            <el-footer>
               <div class="influence-time">
                 <el-slider
                   @change="getYear(value)"
@@ -342,7 +347,7 @@
         <div v-else-if="this.currentView=== 'Deviation'" class="wrap">
           <h1>Deviation</h1>
           <div style="height:500px">
-            <iframe  class="Deviation" frameBorder="0" src="static/result.html"/>
+            <iframe class="Deviation" frameBorder="0" src="static/result.html"/>
           </div>
         </div>
         <div v-else-if="this.currentView=== 'Global'" class="wrap">
@@ -366,7 +371,7 @@ export default {
       currentView: '',
       Intro: {
         'Group': 'Use given data set and clustering algorithms to classify countries into three clusters. Calculate the Difference between the clustering results and the actual classification values and mark them with different colors on the map. The larger red areas illustrate the better performance of the clustering algorithm and the greater  association of these data with the country\'s level of development',
-        'Influence': 'These visualizations are trying to analyze the relationship between six factors and happiness. \n' +
+        'Factors': 'These visualizations are trying to analyze the relationship between six factors and happiness. \n' +
           'Each circle in the diagram represents a country, X-axis represents factor rank, Y-axis represents happiness rank, the color represents the continent the country belongs to, and the size of the circle represents the population of this country.  On the map, the bigger circle means the higher happiness scores, and the color represents the ranking of the contribution degree of a factor. ',
         'Correlation': 'These visualizations show correlations between individual factors based on the data provided. In the Correlation Matrix, the closer the value is to 1 or -1, the greater the correlation between the two factors. At the same time, the Correlation Histogram shows the correlation between various factors and happiness. This makes it very intuitive to see which factors have the greatest impact on happiness. In the Scatter and Density plot, by looking at the trend of points, the influence between the features can also be obtained.\n',
         'Continent': 'This multi-level pie chart shows the overall happiness score in different regions and the happiness variance rate over years. The darker(bluer) color of the region/country means this area is more happy. It is possible to compare the overall happiness score of countries in several regions through the selection of different regions. A positive and higher happiness rate means that the country is becoming happier, while a negative happiness rate means that the country is becoming less happy. ',
@@ -385,46 +390,42 @@ export default {
         100: '2019',
       },
 
-      show2015:true,
-      show2016:false,
-      show2017:false,
-      show2018:false,
-      show2019:false,
+      show2015: true,
+      show2016: false,
+      show2017: false,
+      show2018: false,
+      show2019: false,
     }
   },
 
   methods: {
-    getYear(mark){
+    getYear(mark) {
       console.log(mark)
-      if (mark === 0){
+      if (mark === 0) {
         this.show2015 = true
         this.show2016 = false
         this.show2017 = false
         this.show2018 = false
         this.show2019 = false
-      }
-      else if(mark === 25){
+      } else if (mark === 25) {
         this.show2016 = true
         this.show2015 = false
         this.show2017 = false
         this.show2018 = false
         this.show2019 = false
-      }
-      else if(mark === 50){
+      } else if (mark === 50) {
         this.show2017 = true
         this.show2015 = false
         this.show2016 = false
         this.show2018 = false
         this.show2019 = false
-      }
-      else if(mark === 75){
+      } else if (mark === 75) {
         this.show2018 = true
         this.show2015 = false
         this.show2016 = false
         this.show2017 = false
         this.show2019 = false
-      }
-      else if(mark === 100){
+      } else if (mark === 100) {
         this.show2019 = true
         this.show2015 = false
         this.show2016 = false
@@ -448,7 +449,7 @@ export default {
 </script>
 
 <style>
-.out-head{
+.out-head {
   font-weight: 100;
   text-transform: uppercase;
   color: #fffffe;
@@ -456,6 +457,7 @@ export default {
   font-size: 40px;
   background-color: #004643;
 }
+
 .wordHead {
   color: #fffffe;
   margin: 20px;
@@ -465,7 +467,7 @@ export default {
   margin-top: 20px;
 }
 
-.out-main{
+.out-main {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -477,11 +479,11 @@ export default {
   margin-bottom: 20px;
 }
 
-.textBox{
+.textBox {
   margin-left: 20px;
   margin-right: 10px;
   height: 70%;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 .introduction {
@@ -509,21 +511,21 @@ export default {
   color: #d1d1e9;
 }
 
-h2{
+h2 {
   text-align: center;
 }
 
-p{
-  text-indent:25px
+p {
+  text-indent: 25px
 }
 
 
-.groupImg{
+.groupImg {
   margin: 5%
 }
 
 
-.el-divider--horizontal{
+.el-divider--horizontal {
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -545,7 +547,7 @@ iframe {
   width: 100px;
 }
 
-html,body,#app,.out-head{
+html, body, #app, .out-head {
   /*设置内部填充为0，几个布局元素之间没有间距*/
   padding: 0px;
   /*外部间距也是如此设置*/
@@ -554,14 +556,15 @@ html,body,#app,.out-head{
   height: 100%;
 }
 
-.el-tabs__item.is-active{
+.el-tabs__item.is-active {
   color: #004643
 }
 
-.el-tabs__active-bar{
-  background-color:#004643
+.el-tabs__active-bar {
+  background-color: #004643
 }
-.el-tabs__item:hover{
+
+.el-tabs__item:hover {
   color: #004643
 }
 
