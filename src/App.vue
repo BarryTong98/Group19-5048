@@ -335,6 +335,7 @@
         </div>
         <div v-else-if="this.currentView=== 'Continent'" class="wrap">
           <h1>Continent</h1>
+          <span><span style="color: #e16162">Tip: </span>It may take a while to reload the visualisation since I deploy it in website</span>
           <iframe class="Continent" frameBorder="0" src="https://barrt-test.herokuapp.com/"></iframe>
         </div>
         <div v-else-if="this.currentView=== 'Deviation'" class="wrap">
@@ -343,9 +344,6 @@
         <div v-else-if="this.currentView=== 'Global'" class="wrap">
           <h1>Global</h1>
           <iframe class="Global" frameBorder="0" src="static/map.html"/>
-        </div>
-        <div v-else-if="this.currentView=== 'Unknown'" class="wrap">
-          <h1>Unknown</h1>
         </div>
       </el-main>
     </el-container>
