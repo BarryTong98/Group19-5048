@@ -61,7 +61,7 @@
                 <el-tab-pane label="Economy(GDP)" name="first">
                   <div v-show="show2015">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2015/GDP.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2015/2015-gdp.html"></iframe>
@@ -69,7 +69,7 @@
                   </div>
                   <div v-show="show2016">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2016/GDP.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2016/2016-gdp.html"></iframe>
@@ -77,7 +77,7 @@
                   </div>
                   <div v-show="show2017">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2017/GDP.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2017/2017-gdp.html"></iframe>
@@ -85,7 +85,7 @@
                   </div>
                   <div v-show="show2018">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2018/GDP.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2018/2018-gdp.html"></iframe>
@@ -93,7 +93,7 @@
                   </div>
                   <div v-show="show2019">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2019/GDP.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2019/2019-gdp.html"></iframe>
@@ -103,7 +103,7 @@
                 <el-tab-pane label="Family" name="second">
                   <div v-show="show2015">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2015/family.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2015/2015-family.html"></iframe>
@@ -111,7 +111,7 @@
                   </div>
                   <div v-show="show2016">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2016/family.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2016/2016-family.html"></iframe>
@@ -119,7 +119,7 @@
                   </div>
                   <div v-show="show2017">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2017/family.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2017/2017-family.html"></iframe>
@@ -127,7 +127,7 @@
                   </div>
                   <div v-show="show2018">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2018/family.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2018/2018-family.html"></iframe>
@@ -135,7 +135,7 @@
                   </div>
                   <div v-show="show2019">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2019/family.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2019/2019-family.html"></iframe>
@@ -145,7 +145,7 @@
                 <el-tab-pane label="Health" name="third">
                   <div v-show="show2015">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2015/healthy.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2015/2015-health.html"></iframe>
@@ -153,7 +153,7 @@
                   </div>
                   <div v-show="show2016">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2016/health.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2016/2016-health.html"></iframe>
@@ -161,7 +161,7 @@
                   </div>
                   <div v-show="show2017">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2017/healthy.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2017/2017-health.html"></iframe>
@@ -169,7 +169,7 @@
                   </div>
                   <div v-show="show2018">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2018/healthy.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2018/2018-health.html"></iframe>
@@ -177,7 +177,7 @@
                   </div>
                   <div v-show="show2019">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2019/healthy.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2019/2019-health.html"></iframe>
@@ -187,7 +187,7 @@
                 <el-tab-pane label="Freedom" name="fourth">
                   <div v-show="show2015">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2015/freedom.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2015/2015-freedom.html"></iframe>
@@ -195,7 +195,7 @@
                   </div>
                   <div v-show="show2016">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2016/freedom.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2016/2016-freedom.html"></iframe>
@@ -203,7 +203,7 @@
                   </div>
                   <div v-show="show2017">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2017/freedom.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2017/2017-freedom.html"></iframe>
@@ -211,7 +211,7 @@
                   </div>
                   <div v-show="show2018">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2018/freedom.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2018/2018-freedom.html"></iframe>
@@ -219,7 +219,7 @@
                   </div>
                   <div v-show="show2019">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2019/freedom.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2019/2019-freedom.html"></iframe>
@@ -229,7 +229,7 @@
                 <el-tab-pane label="Trust(Government Corruption)" name="fifth">
                   <div v-show="show2015">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2015/trust.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2015/2015-trust(Government%20Corruption).html"></iframe>
@@ -237,7 +237,7 @@
                   </div>
                   <div v-show="show2016">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2016/trust.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2016/2016-trust(Government%20Corruption).html"></iframe>
@@ -245,7 +245,7 @@
                   </div>
                   <div v-show="show2017">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2017/trust.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2017/2017-trust(Government%20Corruption).html"></iframe>
@@ -253,7 +253,7 @@
                   </div>
                   <div v-show="show2018">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2018/trust.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2018/2018-trust(Government%20Corruption).html"></iframe>
@@ -261,7 +261,7 @@
                   </div>
                   <div v-show="show2019">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2019/trust.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2019/2019-trust(Government%20Corruption).html"></iframe>
@@ -271,7 +271,7 @@
                 <el-tab-pane label="Generosity" name="sixth">
                   <div v-show="show2015">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2015/generosity.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2015/2015-generosity.html"></iframe>
@@ -279,7 +279,7 @@
                   </div>
                   <div v-show="show2016">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2016/generosity.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2016/2016-generosity.html"></iframe>
@@ -287,7 +287,7 @@
                   </div>
                   <div v-show="show2017">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2017/generosity.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2017/2017-generosity.html"></iframe>
@@ -295,7 +295,7 @@
                   </div>
                   <div v-show="show2018">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2018/generosity.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2018/2018-generosity.html"></iframe>
@@ -303,7 +303,7 @@
                   </div>
                   <div v-show="show2019">
                     <div style="height:500px">
-                      <iframe frameBorder="0" src="./static/2015_freedom.html"></iframe>
+                      <iframe frameBorder="0" src="./static/influence-scatter/2019/generosity.html"></iframe>
                     </div>
                     <div style="height: 500px;margin-top: 100px">
                       <iframe frameBorder="0" src="./static/influence-map/2019/2019-generosity.html"></iframe>
@@ -315,7 +315,7 @@
             <div style="text-align: center">
               <el-image src="./static/img-influence-map.png"
                         style="width: 150px;"
-                        fit="contain"></el-image>
+                        fit="contain"4></el-image>
             </div>
             <el-footer >
               <div class="influence-time">
@@ -511,9 +511,6 @@ h2{
 p{
   text-indent:25px
 }
-
-
-
 
 
 .el-divider--horizontal{
